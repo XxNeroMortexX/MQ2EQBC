@@ -19,7 +19,7 @@
 //			- Also added Watch Raid Say option, 'cause Why not?!
 /***************************************************************/
 
-#include <mq/Plugin.h>
+#include <mq/plugin.h>
 
 #include <vector>
 

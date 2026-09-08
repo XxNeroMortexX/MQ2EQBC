@@ -23,6 +23,7 @@
       <Command>if exist "$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), tools\build_scripts\Plugin_Versioning.ps1))\tools\build_scripts\Plugin_Versioning.ps1" powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -File "$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), tools\build_scripts\Plugin_Versioning.ps1))\tools\build_scripts\Plugin_Versioning.ps1" -ProjectName "$(MSBuildProjectName)" -ProjectDirectory "$([MSBuild]::EnsureTrailingSlash('$(MSBuildThisFileDirectory)'))\"</Command>
       <Message>Updating version resource for $(MSBuildProjectName)...</Message>
     </PreBuildEvent>
+    <ClCompile />
   </ItemDefinitionGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{49E2501B-5EDB-C708-272B-819C53BEB0E5}</ProjectGuid>
